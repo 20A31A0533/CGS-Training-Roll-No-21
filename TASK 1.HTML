@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        /* Sidebar */
+        .sidebar {
+            background-color: #e3e3e3;
+            padding: 20px;
+            width: 200px;
+        }
+        .sidebar .logo {
+            background-color: #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar .links a {
+            display: block;
+            background-color: #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            border-radius: 5px;
+        }
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e3e3e3;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .header .name {
+            background-color: #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+        }
+        .header .pro-pic {
+            background-color: #ccc;
+            padding: 20px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        /* Modules */
+        .modules {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .module {
+            background-color: #e3e3e3;
+            padding: 20px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Logo</div>
+            <div class="links">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="name">Name</div>
+                <div class="pro-pic"></div>
+            </div>
+
+            <!-- Modules -->
+            <div class="modules">
+                <div class="module">Module 1</div>
+                <div class="module">Module 2</div>
+                <div class="module">Module 3</div>
+                <div class="module">Module 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
