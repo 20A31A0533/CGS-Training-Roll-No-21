@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .logo-container img {
+            max-height: 100px;
+            margin-right: 20px;
+        }
+        .story-circle, .profile-pic, .post-image {
+            background-color: #ddd;
+        }
+        .story-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 10px;
+            object-fit: cover;
+            border: 3px solid red; /* Highlighted red border */
+            padding: 2px; /* Space between image and border */
+            background-color: #fff; /* White background to create separation */
+            
+        };
+        .story{
+            overflow: auto;
+
+        }
+        
+        .post {
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            overflow: auto;
+        }
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+        .post-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .post-footer {
+            padding: 10px;
+        }
+      
+
+        
+        .main-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Styles for the right sidebar */
+        .user-suggestion-section {
+            margin-top: 20px;
+        }
+        .suggestion-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .suggested-users {
+            list-style-type: none;
+            padding: 0;
+        }
+        .suggestion-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .suggestion-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #ddd;
+        }
+        .suggestion-item span {
+            font-weight: bold;
+        }
+        .suggestion-item small {
+            display: block;
+            font-weight: normal;
+            color: #8e8e8e;
+        }
+        /* Switch Account Button */
+.switch-account-container {
+    text-align: right;
+    margin-top: 20px;
+}
+.switch-account-btn {
+    background-color: transparent;
+    border: none;
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="logo-container">
+                    <img src="instaimages.png" alt="Instagram Logo" width="50%" height="100%"> <!-- Replace with actual logo path -->
+                </div>
+                <div id="optionBox">
+                    <ul class="list-group"> </ul>
+                    <li class="list-group-item">Home</li>
+                    <li class="list-group-item">PROFILE</li>
+                    <li class="list-group-item">REELS</li>
+                    <li class="list-group-item">SETTINGS</li>
+                    <li class="list-group-item">ARCHIVE</li>
+                    <li class="list-group-item">LOG OUT</li>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-6">
+                <div class="main-content">
+                    <!-- Stories Section -->
+                    <div class="d-flex">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 1">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 2">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 3">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 4">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 5">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 6">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 7">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 8">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 9">
+                        <img class="story-circle" src="Profilepicture.png" alt="Story 10">
+                    </div>
+
+                    <!-- Post Section -->
+                    <div class="post">
+                        <div class="d-flex align-items-center p-3">
+                            <img class="profile-pic" src="Profilepicture.png" alt="User Profile">
+                            <span>SURYA</span>
+                        </div>
+                        
+                        <img class="post-image" src="peacock.jpg" alt="Post Image">
+                        <div class="post-footer">
+                            <p><strong>SURYA</strong> Photography...</p>
+                            <p class="text-muted">View all 13 comments</p>
+                            
+                           
+                        </div>
+                    </div>
+                    
+                        
+
+                    <!-- Repeat for more posts -->
+                </div>
+            </div>
+
+            <!-- Right Sidebar for Suggestions -->
+            <div class="col-md-3">
+                <div class="sticky-top user-suggestion-section">
+                    <!-- Suggested Users Section -->
+                    <div class="suggestion-header">
+                        Suggested for you
+                    </div>
+
+                    <!-- Suggested Users List -->
+                    <ul class="suggested-users">
+                        <li class="suggestion-item">
+                            <img src="sunset.jpg" alt="User 1 Profile Pic">
+                            <span>sai</span>
+                            <small>Suggested for you</small>
+                        </li>
+                        <li class="suggestion-item">
+                            <img src="girl.jpg" alt="User 2 Profile Pic">
+                            <span>riya</span>
+                            <small>Suggested for you</small>
+                        </li>
+                        <li class="suggestion-item">
+                            <img src="kid.jpg" alt="User 3 Profile Pic">
+                            <span>ruby</span>
+                            <small>Suggested for you</small>
+                        </li>
+                        <li class="suggestion-item">
+                            <img src="girl.jpg" alt="User 4 Profile Pic">
+                            <span>User 4</span>
+                            <small>Suggested for you</small>
+                        </li>
+                    </ul>
+                </div>
+            <div class="switch-account-container">
+            <input type="submit" class="btn btn-info" value="switch account">
+             </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
