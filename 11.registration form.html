@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>REGISTRATION FORM</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label  for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="occupation">Occupation:</label>
+                <input type="text" class="form-control" id="occupation" placeholder="Enter your occupation">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="gender">Gender:</label>
+                <select id="gender" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="civilstatus">Civil Status:</label>
+                <select id="civilstatus" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                    <option>Widowed</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="citizenship">Citizenship:</label>
+                <input type="text" class="form-control" id="citizenship" placeholder="Enter your citizenship">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="height">Height:</label>
+                <input type="text" class="form-control" id="height" placeholder="Enter your height">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="weight">Weight:</label>
+                <input type="text" class="form-control" id="weight" placeholder="Enter your weight">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="religion">Religion:</label>
+                <input type="text" class="form-control" id="religion" placeholder="Enter your religion">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="language">Language:</label>
+                <input type="text" class="form-control" id="language" placeholder="Enter your language">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fathername">Father's Name:</label>
+                <input type="text" class="form-control" id="fathername" placeholder="Enter your father's name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="fatheroccupation">Occupation:</label>
+                <input type="text" class="form-control" id="fatheroccupation" placeholder="Enter your father's occupation">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="mothername">Mother's Name:</label>
+                <input type="text" class="form-control" id="mothername" placeholder="Enter your mother's name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="motheroccupation">Occupation:</label>
+                <input type="text" class="form-control" id="motheroccupation" placeholder="Enter your mother's occupation">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="emergencycontact">Person to contact in case of emergency:</label>
+                <input type="text" class="form-control" id="emergencycontact" placeholder="Enter emergency contact name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="emergencycontactnumber">Contact Number:</label>
+                <input type="tel" class="form-control" id="emergencycontactnumber" placeholder="Enter emergency contact number">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
