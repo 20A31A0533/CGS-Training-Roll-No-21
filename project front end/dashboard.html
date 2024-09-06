@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Case Manager Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007acc;
+    padding: 10px;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.services {
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.service-box-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box {
+    width: 30%;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.service-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.case-info {
+    margin-top: 40px;
+}
+
+.tabs {
+    margin: 20px 0;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #007acc;
+    color: white;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #004d99;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.case-btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+#hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <img src="case management logo.png"  class="logo">
+            <ul>
+                <li><a href="#">Welcome Page</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Case Information</a></li>
+                <li><a href="#">Communication Hub</a></li>
+                <li><a href="#">Billing and Payment</a></li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <button id="hamburger-menu" onclick="toggleSidebar()">☰</button>
+                    <h1>Welcome to Online Case Manager</h1>
+                </div>
+                <div class="user-info">
+                    <span>CLIENT</span>
+                    <span>a client</span>
+                    <button class="logout-btn"><img src="logout.png" ></button>
+                </div>
+            </header>
+
+            <!-- Services Section -->
+            <div class="services">
+                <p class="welcome-text">We are happy to provide you with the following services to track your cases</p>
+                <div class="service-box-container">
+                    <div class="service-box" id="profile">
+                        <img src="personal-id.png" >
+                        <h3>Personal Profile</h3>
+                    </div>
+                    <div class="service-box" id="communication">
+                        <img src="communicationhub.png" >
+                        <h3>Communication Hub</h3>
+                    </div>
+                    <div class="service-box" id="billing">
+                        <img src="billing.png" >
+                        <h3>Billing & Payment</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Information Section -->
+            <div class="case-info">
+                <h2>Case Informations</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab('open')">Open</button>
+                    <button class="tab-btn" onclick="showTab('closed')">Closed</button>
+                </div>
+
+                <div id="open" class="tab-content">
+                    
+
+
+
+                    
+                </div>
+
+                <div id="closed" class="tab-content" style="display:none;">
+                    <h3>No closed cases available.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
