@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #000000; 
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff; 
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #007bff; 
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #007bff; 
+    border-radius: 5px;
+    background-color: #f0f8ff; 
+    color: #000000; 
+}
+
+input:focus {
+    outline: none;
+    border-color: #0056b3; 
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #ffffff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.display-data {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f8ff; 
+    border-radius: 5px;
+    color: #007bff; 
+    border: 1px solid #007bff; 
+}
+
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up Details</h2> 
+        <form id="registrationForm">
+            <div class="form-step" id="step1">
+                <label for="email">Enter your email*</label>
+                <input type="email" id="email" required>
+                <button type="button" onclick="nextStep(1)">Continue</button>
+            </div>
+
+            <div id="displayData" class="display-data" style="display: none;"></div>
+
+            <div class="form-step" id="step2" style="display: none;">
+                <label for="name">Enter your name*</label>
+                <input type="text" id="name" required>
+                <button type="button" onclick="nextStep(2)">Continue</button>
+            </div>
+
+            <div class="form-step" id="step3" style="display: none;">
+                <label for="contact">Enter your contact number*</label>
+                <input type="tel" id="contact" required>
+                <button type="button" onclick="nextStep(3)">Continue</button>
+            </div>
+
+           <div class="form-step" id="step4" style="display: none;">
+                <label for="userId">Enter your user ID*</label>
+                <input type="text" id="userId" required>
+                <button type="button" onclick="nextStep(4)">Continue</button>
+            </div>
+
+            <div class="form-step" id="step5" style="display: none;">
+                <label for="password">Enter your password*</label>
+                <input type="password" id="password" required>
+                <button type="submit" onclick="displayEnteredData()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="blank.js"></script>
+</body>
+</html>

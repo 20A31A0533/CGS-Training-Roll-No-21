@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+        .row{
+            height: 570px;
+            margin: 50px;
+            }
+        .finish{
+            margin-left: 500px;
+        }
+        body{
+            background-color: rgb(183, 180, 177);
+        }
+
+    </style>
+  </head>
+  <body >
+    <div  class="container-fluid ">
+        <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="text-center "> <h1> Voting machine </h1></div>
+            <div id="bjp" class="container bg-white col-md-3 card mt-3 " >
+                <div class="photo img-fluid mt-5 text-center"><img src="" alt="BJP" /></div>
+                <div class="bjp  mt-5 text-center"><h1>BJP</h1></div>
+                 <div class="score text-center border " id="s1"><h4>0</h4></div>
+                <div class="btn btn-primary w-100 mt-3" id="btn1">Vote</div>
+              </div>
+              <div class="container bg-white col-md-3 card mt-3 " >
+                <div class="photo img-fluid mt-5 text-center"><img src="" alt="BJP" /></div>
+                <div class="bjp  mt-5 text-center"><h1>Congress</h1></div>
+                <div class="score text-center border " id="s2"><h4>0</h4></div>
+                <div class="btn btn-primary w-100 mt-3" id="btn2">Vote</div>
+              </div>
+              <div class="container bg-white col-md-3 card mt-3 " >
+                <div class="photo img-fluid mt-5 text-center"><img src="" alt="BJP" /></div>
+                <div class="bjp  mt-5 text-center"><h1>BRS</h1></div>
+                <div class="score text-center border " id="s3"><h4>0</h4></div>
+                <div class="btn btn-primary w-100 mt-3" id="btn3">Vote</div>
+              </div>
+          <div class="container bg-white col-md-3 card mt-3 " >
+            <div class="photo img-fluid mt-5 text-center"><img src="" alt="BJP" /></div>
+            <div class="bjp  mt-5 text-center"><h1>JANASENA</h1></div>
+            <div class="score text-center border mt-3 " id="s4"><h4>0</h4></div>
+            <div class="btn btn-primary w-100 mt-3" id="btn4">Vote</div>
+          </div>
+        </div>
+        <div class="finish">
+            <div class="btn btn-success w-50  "> <button>finish</button></div>
+        </div>
+    </div>
+    <script src="voting.js"></script>
+  </body>
+</html>
