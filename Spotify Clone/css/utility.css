@@ -1,0 +1,193 @@
+.border{
+    border: 2px solid  red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the track */
+  }
+  
+  /* For Firefox */
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    width: 50%;
+}
+
+.searchButton {
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.searchButton:hover {
+    background-color: #148b42;
+}
+
+.cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 60vh; 
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all .9s;
+}
+.card:hover{
+    background-color: rgb(105, 103, 103);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card .card-body {
+    padding: 10px;
+    color: white;
+}
+
+.card .card-body h5, .card .card-body p {
+    margin: 5px 0;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Play Button Styles */
+.songbuttons #play {
+    background-color: #1DB954; /* Spotify green */
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.songbuttons #play:hover {
+    background-color: #1ed760; /* Slightly lighter green on hover */
+}
+
+/* Previous and Next buttons, same size but no green background */
+.songbuttons #previous, .songbuttons #next {
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.songbuttons img {
+    filter: invert(1); /* Ensures icons inside are white */
+}
+/* Style for the play button in the audio player */
+audio::-webkit-media-controls-play-button {
+    background-color: #1DB954 !important; /* Spotify green */
+    border-radius: 50%; /* Circle shape */
+    height: 30px; /* Adjust as needed */
+    width: 30px; /* Adjust as needed */
+}
+
+/* Style for other controls */
+audio::-webkit-media-controls-panel {
+    background-color: #191414; /* Dark background for Spotify feel */
+    color: white; /* Text color for dark theme */
+}
+
+/* Custom volume range color */
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    background-color: #1DB954 !important; /* Spotify green for volume */
+}
+
+/* Style for the play button in the audio player */
+audio::-webkit-media-controls-play-button {
+    background-color: #1DB954 !important; /* Spotify green */
+    border-radius: 50%; /* Circle shape */
+    height: 30px; /* Adjust as needed */
+    width: 30px; /* Adjust as needed */
+}
+
+/* Style for other controls */
+audio::-webkit-media-controls-panel {
+    background-color: #191414; /* Dark background for Spotify feel */
+    color: white; /* Text color for dark theme */
+}
+
+/* Hide the volume controls */
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    display: none !important; /* Remove the volume button and slider */
+}
